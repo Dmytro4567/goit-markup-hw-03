@@ -55,19 +55,15 @@ img {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header .container {
+.header-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /*padding-top: 24px;*/
+    /*padding-bottom: 24px;*/
 }
 
 .navigation {
     display: flex;
-    flex-direction: row;
     align-items: center;
 
 
@@ -75,12 +71,21 @@ img {
 
 .contacts-list {
     display: flex;
-    flex-direction: row;
 }
 
 .navigation-list {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation-item {
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #2E2F42;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .logo {
@@ -92,28 +97,28 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .logo-studio {
     color: #2E2F42;
 }
 
-.navigation-item {
-    font-weight: 500;
-    line-height: 1.5;
-    color: #2E2F42;
-    letter-spacing: 0.02em;
-    margin-right: 40px;
-}
-
 .contacts {
     font-style: normal;
 }
 
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .contacts-item {
+    display: block;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-left: 40px;
+    padding: 24px 0;
 }
 
 .navigation-item:hover, .navigation-item:focus, .contacts-item:hover, .contacts-item:focus {
