@@ -35,7 +35,7 @@ ul, ol {
     margin: 0;
 }
 
-image {
+img {
     display: block;
 }
 
@@ -51,12 +51,18 @@ image {
     padding-right: 15px;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navigation {
