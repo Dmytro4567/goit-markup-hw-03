@@ -5,6 +5,19 @@ body {
     background-color: white;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -12,10 +25,56 @@ a {
     outline: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 ul, ol {
     list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+image {
+    display: block;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    max-width: 1158px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
 }
 
 .logo {
@@ -26,6 +85,7 @@ ul, ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-studio {
@@ -37,6 +97,7 @@ ul, ol {
     line-height: 1.5;
     color: #2E2F42;
     letter-spacing: 0.02em;
+    margin-right: 40px;
 }
 
 .contacts {
@@ -46,6 +107,7 @@ ul, ol {
 .contacts-item {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-left: 40px;
 }
 
 .navigation-item:hover, .navigation-item:focus, .contacts-item:hover, .contacts-item:focus {
@@ -55,6 +117,15 @@ ul, ol {
 .hero {
     background-color: #2E2F42;
     color: white;
+}
+
+.hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 540px;
+
 }
 
 .hero-header {
@@ -74,18 +145,27 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+    margin-top: 48px;
 }
 
 .hero-button:hover, .hero-button:focus {
     background: #404BBF;
 }
 
-.solutions-header {
-    color: #2E2F42;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.02em;
+
+.solutions-list {
+    display: flex;
+    gap: 24px;
+}
+
+.solutions-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.solutions-list-item:last-child {
+    margin-right: 0;
 }
 
 .solutions-list-item-header {
@@ -99,11 +179,13 @@ ul, ol {
 .solutions-list-item-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
 }
 
 .team {
     background-color: #F4F4FD;
 }
+
 
 .team-header {
     color: #2E2F42;
@@ -113,10 +195,18 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-list-item {
     background-color: white;
+    width: calc((100% - 72px) / 4);
+    padding-bottom: 32px;
 }
 
 .team-list-item-header {
@@ -126,12 +216,14 @@ ul, ol {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-top: 32px;
 }
 
 .team-list-item-text {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-top: 3px;
 }
 
 .portfolio-header {
@@ -142,6 +234,13 @@ ul, ol {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .portfolio-list-item-header {
@@ -150,16 +249,23 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-item-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-left: 16px;
+    margin-bottom: 32px;
 }
 
 .footer {
     color: white;
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-footer {
@@ -180,6 +286,8 @@ ul, ol {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
 }
 
 
